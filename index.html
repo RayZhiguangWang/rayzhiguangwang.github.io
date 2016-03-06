@@ -5,7 +5,7 @@ layout: default
 	{% for post in site.posts %}
   	<div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-			  <img src="/pictures/{{ post.title }}.jpg"  alt="picture of clothes.">
+			  <img src="{{ site.baseurl }} /pictures/{{ post.title }}.jpg"  alt="picture of clothes.">
       	<div class="caption">
 				<p><a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary" role="button">{{ post.title }}</a></p>
 	    </div>
