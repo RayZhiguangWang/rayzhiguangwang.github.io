@@ -2,64 +2,14 @@
 layout: default
 ---
 <div class="row">
+	{% for post in site.categories.tshirts%}
   	<div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <img src="..." alt="picture of clothes.">
+			  <img src="/pictures/{{ post.title }}.jpg"  alt="picture of clothes.">
       	<div class="caption">
-	        <h3>cloth name or code</h3>
-	       <p>some description</p>
-	       <p><a href="#" class="btn btn-primary" role="button">detail page</a></p>
+				<p><a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary" role="button">{{ post.title }}</a></p>
 	    </div>
 	  </div>
 	</div>
-  	<div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="..." alt="picture of clothes.">
-      	<div class="caption">
-	        <h3>cloth name or code</h3>
-	       <p>some description</p>
-	       <p><a href="#" class="btn btn-primary" role="button">detail page</a></p>
-	    </div>
-	  </div>
-	</div>
-  	<div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="..." alt="picture of clothes.">
-      	<div class="caption">
-	        <h3>cloth name or code</h3>
-	       <p>some description</p>
-	       <p><a href="#" class="btn btn-primary" role="button">detail page</a></p>
-	    </div>
-	  </div>
-	</div>
-  	<div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="..." alt="picture of clothes.">
-      	<div class="caption">
-	        <h3>cloth name or code</h3>
-	       <p>some description</p>
-	       <p><a href="#" class="btn btn-primary" role="button">detail page</a></p>
-	    </div>
-	  </div>
-	</div>
-  	<div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="..." alt="picture of clothes.">
-      	<div class="caption">
-	        <h3>cloth name or code</h3>
-	       <p>some description</p>
-	       <p><a href="#" class="btn btn-primary" role="button">detail page</a></p>
-	    </div>
-	  </div>
-	</div>
-  	<div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="..." alt="picture of clothes.">
-      	<div class="caption">
-	        <h3>cloth name or code</h3>
-	       <p>some description</p>
-	       <p><a href="#" class="btn btn-primary" role="button">detail page</a></p>
-	    </div>
-	  </div>
-	</div>
+	{% endfor %}
 </div>

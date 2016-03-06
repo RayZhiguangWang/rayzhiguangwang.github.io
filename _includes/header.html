@@ -12,8 +12,9 @@
 				<div class="container">
 					<ul class="nav navbar-nav">
 						<!- for category ->
-						<p class="navbar-text"><a href="tshirts.html" class="navbar-link">T-shrits</a></p>
-						<p class="navbar-text"><a href="pants.html" class="navbar-link">Pants</a><p>
+						<p class="navbar-text"><a href="{{ "/index.html" | prepend: site.baseurl }}" class="navbar-link">Home</a></p>
+						<p class="navbar-text"><a href="{{ "/tshirts.html" | prepend: site.baseurl }}" class="navbar-link">T-shrits</a></p>
+						<p class="navbar-text"><a href="{{ "/pants.html" | prepend: site.baseurl }}" class="navbar-link">Pants</a><p>
 					</ul>	
 				</div>
 			</nav>
